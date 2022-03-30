@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+/* BARRE DE NAVIGATION */
+
+header {
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  opacity: 0.75;
+}
+
+h1 {
+  color: white;
+  margin-left: 30px;
+  text-align: center;
+  text-shadow: 2px 0px 3px lightgrey;
+}
+
+ul li {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+/* IMAGE PRINCIPALE */
+
+#image_main {
+  background: url(assets/AdobeStock_393936037\ recadré.jpg) no-repeat fixed 50%
+    50%;
+  background-size: 100%;
+  height: 1000px;
+}
+
+/* FOOTER */
+
+.contact {
+  padding-top: 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.contact p {
+  text-decoration: underline;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+.map {
+  text-align: center;
+  margin-top: 30px;
+}
+
+hr {
+  width: 50% 50%;
+}
+
+.Footer_socialMedia {
+  text-align: center;
+  padding: 10px;
+}
+
+.Footer_socialMedia a img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.copyright {
+  text-align: end;
+  font-size: 15px;
+  font-weight: 100;
+  color: lightslategray;
+  margin-right: 20px;
+}
