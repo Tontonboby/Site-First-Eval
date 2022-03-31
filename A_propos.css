@@ -20,7 +20,8 @@ header {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
+  top: 0;
   width: 100vw;
   opacity: 0.75;
 }
@@ -48,50 +49,63 @@ li a {
   margin-right: 0.8em;
 }
 
-/* IMAGE PRINCIPALE */
-
-body #image_main {
-  background: url(assets/Chouquette-mobile.jpg) no-repeat fixed 0% 0%;
-  background-position: top 0%;
-  /* display: flex;
-  align-items: center; */
-  background-size: 100%;
-  height: 65vh;
-  padding-top: 0px;
-}
-
-.presentation h2 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  display: flex;
-  justify-content: center;
-}
-
-.presentation p {
+main {
+  margin-top: 5em;
+  padding: 0.5em;
   text-align: center;
-  padding: 1.5em 1.5em;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+
+h3 {
+  text-align: center;
+}
+
+section {
+  align-items: center;
+}
+
+.picture__promenade {
+  width: 35vh;
+  height: 30vh;
+  padding: 0.5em;
+}
+
+p {
+  font-size: 0.6em;
+  margin: 1.5em;
+}
+
+.picture__baignade {
+  width: 35vh;
+  height: 30vh;
+  padding: 0.5em;
+}
+
+.picture__canicross {
+  width: 35vh;
+  height: 30vh;
+  padding: 0.5em;
 }
 
 /* FOOTER */
-
-hr {
-  width: 50% 50%;
-}
-
-.Footer_socialMedia {
-  text-align: center;
-  padding: 1px;
-}
 
 footer {
   background-color: #515142;
   width: 100%;
   height: 10vh;
-  position: absolute;
-  bottom: 0;
 }
+
+.Footer_socialMedia {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
 
 .Footer_socialMedia a img {
   text-align: center;
@@ -108,4 +122,134 @@ footer {
   color: whitesmoke;
   margin-right: 2em;
   margin-top: 0.2em;
+}
+
+/* Mode tablette */
+
+@media screen and (min-width: 810px) {
+  
+  .navbar {
+    align-items: self-end;
+    padding-right: 1.5em;
+  }
+
+  h1 ul li {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 1.5em;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    margin-right: 0.8em;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  main {
+    margin-top: 3em;
+    padding: 2em;
+    text-align: center;
+  }
+
+  .promenade {
+    display:flex;
+  }
+  
+  .picture__promenade {
+    width: 35vh;
+    height: 30vh;
+    padding: 0.5em;
+    margin-right: 1em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 1.5em;
+  }
+  
+  .baignade {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+  
+  .picture__baignade {
+    width: 35vh;
+    height: 30vh;
+    padding: 0.5em;
+    margin-left: 1em;
+  }
+  
+  .canicross {
+    display:flex;
+  }
+  
+  .picture__canicross {
+    width: 35vh;
+    height: 30vh;
+    padding: 0.5em;
+    margin-right: 1em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
+/* Mode ecran pc  */
+
+@media screen and (min-width: 1080px) {
+
+  li a {
+    font-size: 1.2em;
+  }
+
+  
+  .picture__promenade {
+    width: 60vh;
+    height: 55vh;
+    margin-right: 2em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 1.5em;
+  }
+  
+  .baignade {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+  
+  .picture__baignade {
+    width: 60vh;
+    height: 55vh;
+    margin-left: 2em;
+  }
+  
+  .canicross {
+    display:flex;
+  }
+  
+  .picture__canicross {
+    width: 60vh;
+    height: 55vh;
+    margin-right: 2em;
+  }
+
+  footer {
+    background-color: #515142;
+    width: 100%;
+    height: 14vh;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
 }
