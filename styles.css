@@ -71,7 +71,8 @@ body #image_main {
 
 .presentation p {
   text-align: center;
-  padding: 1.5em 1.5em;
+  padding: 1em;
+  padding-bottom: 0;
 }
 
 /* FOOTER */
@@ -93,9 +94,9 @@ body #image_main {
 
 .map {
   display: flex;
-  text-align: center;
+  justify-content: center;
   margin-top: 2em;
-  margin: 1em 1em;
+  margin: 1.5em 1.5em;
 }
 
 hr {
@@ -128,4 +129,76 @@ footer {
   color: whitesmoke;
   margin-right: 2em;
   margin-top: 0.2em;
+}
+
+/* Mode tablette */
+
+@media screen and (min-width: 810px) {
+  h1 ul li {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    margin-right: 0.8em;
+  }
+
+  body #image_main {
+    background: url(assets/Chouquette-medium.jpg) no-repeat fixed 0% 0%;
+    background-position: top 0%;
+    /* display: flex;
+    align-items: center; */
+    background-size: 100%;
+    height: 75vh;
+    padding-top: 0px;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin: 1em 1em;
+  }
+}
+
+/* Mode ecran pc  */
+
+@media screen and (min-width: 1000px) {
+  h1 ul li {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    margin-right: 0.8em;
+  }
+
+  body #image_main {
+    background: url(assets/Chouquette-desktop.jpg) no-repeat fixed 0% 0%;
+    background-position: top 0%;
+    /* display: flex;
+    align-items: center; */
+    background-size: 100%;
+    height: 100vh;
+    padding-top: 0px;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin: 1em 1em;
+  }
 }

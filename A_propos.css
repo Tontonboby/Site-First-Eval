@@ -1,11 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
   background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
 }
 
 /* BARRE DE NAVIGATION */
@@ -16,61 +21,60 @@ header {
 
 .navbar {
   position: sticky;
-  width: 100%;
+  width: 100vw;
   opacity: 0.75;
 }
 
 h1 {
   color: white;
-  margin-left: 30px;
+  margin-left: 1em;
   text-align: center;
   text-shadow: 2px 0px 3px lightgrey;
+  font-weight: bold;
 }
 
-ul li {
+h1 ul li {
   color: white;
   list-style-type: none;
   display: flex;
   text-align: center;
-  display: inline-block;
   margin: 20px;
 }
 
 li a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 0.8em;
+  margin-right: 0.8em;
 }
 
 /* IMAGE PRINCIPALE */
 
-#image_main {
-  background: url(assets/AdobeStock_393936037\ recadré.jpg) no-repeat fixed 50%
-    50%;
+body #image_main {
+  background: url(assets/Chouquette-mobile.jpg) no-repeat fixed 0% 0%;
+  background-position: top 0%;
+  /* display: flex;
+  align-items: center; */
   background-size: 100%;
-  height: 1000px;
+  height: 65vh;
+  padding-top: 0px;
+}
+
+.presentation h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+}
+
+.presentation p {
+  text-align: center;
+  padding: 1.5em 1.5em;
 }
 
 /* FOOTER */
-
-.contact {
-  padding-top: 30px;
-  text-align: center;
-  list-style-type: none;
-}
-
-.contact p {
-  text-decoration: underline;
-}
-
-.contact a {
-  text-decoration: none;
-  color: black;
-}
-.map {
-  text-align: center;
-  margin-top: 30px;
-}
 
 hr {
   width: 50% 50%;
@@ -78,20 +82,30 @@ hr {
 
 .Footer_socialMedia {
   text-align: center;
-  padding: 10px;
+  padding: 1px;
+}
+
+footer {
+  background-color: #515142;
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
 }
 
 .Footer_socialMedia a img {
-  width: 50px;
-  height: 50px;
   text-align: center;
-  margin: 10px;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  margin-bottom: Oem;
 }
 
 .copyright {
   text-align: end;
-  font-size: 15px;
+  font-size: 0.5em;
   font-weight: 100;
-  color: lightslategray;
-  margin-right: 20px;
+  color: whitesmoke;
+  margin-right: 2em;
+  margin-top: 0.2em;
 }
