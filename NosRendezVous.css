@@ -20,7 +20,8 @@ header {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
+  top: 0;
   width: 100vw;
   opacity: 0.75;
 }
@@ -48,33 +49,38 @@ li a {
   margin-right: 0.8em;
 }
 
-/* IMAGE PRINCIPALE */
-
-body #image_main {
-  background: url(assets/Chouquette-mobile.jpg) no-repeat fixed 0% 0%;
-  background-position: top 0%;
-  /* display: flex;
-  align-items: center; */
-  background-size: 100%;
-  height: 65vh;
-  padding-top: 0px;
-}
-
-.presentation h2 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  display: flex;
-  justify-content: center;
-}
-
-.presentation p {
+main {
+  margin-top: 5em;
+  padding: 0.5em;
   text-align: center;
-  padding: 1.5em 1.5em;
 }
 
-/* FOOTER */
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+
+p {
+  font-size: 0.6em;
+  margin: 1.5em;
+}
+
+.evenement {
+  margin-top: 3em;
+}
+
+table {
+  font-size: 0.6em;
+  margin: 1.5em;
+}
+th {
+  border: 0.5px solid black;
+}
+tr td {
+  border: 0.5px solid black;
+}
 
 .contact {
   text-align: center;
@@ -93,27 +99,22 @@ body #image_main {
 
 .map {
   display: flex;
-  text-align: center;
-  margin-top: 2em;
-  margin: 1em 1em;
+  justify-content: center;
+  margin: 1.5em 1.5em;
 }
 
-hr {
-  width: 50% 50%;
-}
-
-.Footer_socialMedia {
-  text-align: center;
-  padding: 1px;
-}
-
+/* FOOTER */
 footer {
   background-color: #515142;
   width: 100%;
   height: 10vh;
-  position: absolute;
-  bottom: 0;
 }
+
+.Footer_socialMedia {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
 
 .Footer_socialMedia a img {
   text-align: center;
@@ -130,4 +131,102 @@ footer {
   color: whitesmoke;
   margin-right: 2em;
   margin-top: 0.2em;
+}
+
+/* Mode tablette */
+
+@media screen and (min-width: 810px) {
+  
+  .navbar {
+    align-items: self-end;
+    padding-right: 1.5em;
+  }
+
+  h1 ul li {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 1.5em;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    margin-right: 0.8em;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  main {
+    margin-top: 3em;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 1.5em;
+  }
+
+  .evenement {
+    display: grid;
+    justify-content: center;
+  }
+
+  table {
+    font-size: 0.6em;
+    margin: 1.5em;
+  }
+  th {
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  tr td {
+    border: 1px solid black;
+    font-size: 1.5em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
+/* Mode ecran pc  */
+
+@media screen and (min-width: 1080px) {
+
+  li a {
+    font-size: 1.2em;
+  }
+
+  table {
+    font-size: 0.6em;
+    margin: 1.5em;
+  }
+  th {
+    border: 2px solid black;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  tr td {
+    border: 2px solid black;
+    font-size: 2em;
+  }
+
+  footer {
+    background-color: #515142;
+    width: 100%;
+    height: 14vh;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
 }

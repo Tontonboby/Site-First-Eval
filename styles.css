@@ -59,7 +59,7 @@ body #image_main {
 }
 
 .presentation h2 {
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -74,31 +74,6 @@ body #image_main {
 }
 
 /* FOOTER */
-
-.contact {
-  text-align: center;
-  list-style-type: none;
-}
-
-.contact p {
-  text-decoration: underline;
-}
-
-.contact a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.8em;
-}
-
-.map {
-  display: flex;
-  justify-content: center;
-  margin: 1.5em 1.5em;
-}
-
-hr {
-  width: 50% 50%;
-}
 
 .Footer_socialMedia {
   text-align: center;
